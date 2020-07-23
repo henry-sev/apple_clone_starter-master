@@ -70,3 +70,6 @@ table {
   *zoom: 1;
 }
 /*               End of Setup             */
+nav {
+  background-color: black;
+}
