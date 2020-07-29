@@ -69,44 +69,209 @@ table {
   clear: both;
   *zoom: 1;
 }
+
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
 /*               End of Setup             */
+html * {
+  font-family: "Myriad Set Pro";
+}
+
 header {
   background-color: #333;
-
+  height: 44px;
 }
-
 nav {
-  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
+  width: 1000px;
+  justify-content: space-between;
 }
 
-nav img {
+nav a {
   padding: 0 10px;
-  margin: 0 20px;
 }
 
-.clearfix img {
-  /* width: 25%; */
-  margin: 0.5% 1% 1% 24%;
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#main-content {
-  float: right;
-  width: 30%;
-  margin: 12% 20% 0 1%;
-  /* padding: 0; */
+.iphone6s-image {
+  margin: 10px 0;
+}
+
+.iphone6s-text {
+  width: 440px;
+  margin: 220px 70px 0;
   text-align: center;
 }
 
-#main-content img {
-  /* display: block; */
-  margin: 0;
-}
-
-#main-content p {
+h2 {
   font-size: 39.5px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
 }
 
-#main-content a {
+.iphone6s-text > a {
   font-size: 23.7px;
+  font-weight: 300;
+  padding: 0 5px;
+}
+
+.products-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.image {
+  width: 25%;
+  height: 200px;
+  border: 1px solid #fff;
+  /* 没有作用？ */
+  /* background-position: center; */
+}
+.watch-img {
+  background: url(./images/watch_large.jpg) no-repeat;
+  background-position: center;
+}
+
+.ipad-img {
+  background: url(./images/ipad_pro_large.jpg) no-repeat;
+  background-position: center;
+}
+
+.accessory-img {
+  background: url(./images/accessories_large.jpg) no-repeat;
+  background-position: center;
+}
+
+.macbook-img {
+  background: url(./images/macbook_large.jpg) no-repeat;
+  background-position: center;
+}
+
+.recall-link {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+.col-container,
+.footer-help {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.col-container {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.7em;
+}
+
+.col {
+  /* border: 1px solid #000; */
+  width: 200px;
+  /* flex-grow: 1; */
+}
+
+.col-container p {
+  padding-top: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.footer-help p {
+  color: #999;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.help-container {
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.legal {
+  margin-right: 20px;
+  color: #999;
+}
+.legal-links {
+  flex-grow: 1;
+}
+
+.legal-links a {
+  padding: 0 10px;
+}
+
+.links-border {
+  border-right: 1px solid #ddd;
+}
+
+.help-container img {
+  margin: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #08c;
+}
+
+
+.col-container a {
+  color: #666;
+}
+
+.legal-links a {
+  color: #666;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.recall-link a:hover {
+  color: #08c;
 }
