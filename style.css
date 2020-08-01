@@ -128,11 +128,11 @@ nav a {
   justify-content: center;
 }
 
-.iphone6s-image {
+.main-image {
   margin: 10px 0;
 }
 
-.iphone6s-text {
+.main-text {
   width: 440px;
   margin: 220px 70px 0;
   text-align: center;
@@ -146,13 +146,13 @@ h2 {
   letter-spacing: -1px;
 }
 
-.iphone6s-text > a {
+.main-text > a {
   font-size: 23.7px;
   font-weight: 300;
   padding: 0 5px;
 }
 
-.products-img {
+.sub-images {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
@@ -184,7 +184,7 @@ h2 {
   background-position: center;
 }
 
-.recall-link {
+.sub-text {
   text-align: center;
   margin: 20px 0;
   font-size: 18px;
@@ -243,7 +243,7 @@ footer {
   padding: 0 10px;
 }
 
-.links-border {
+.legal-links a:not(:last-child) {
   border-right: 1px solid #ddd;
 }
 
@@ -255,7 +255,6 @@ a {
   text-decoration: none;
   color: #08c;
 }
-
 
 .col-container a {
   color: #666;
@@ -270,6 +269,6 @@ a:hover {
   color: #000;
 }
 
-.recall-link a:hover {
+.sub-text a:hover {
   color: #08c;
 }
