@@ -102,8 +102,8 @@ table {
   font-weight: 100;
 }
 /*               End of Setup             */
-html * {
-  font-family: "Myriad Set Pro";
+body {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 header {
@@ -208,9 +208,7 @@ footer {
 }
 
 .col {
-  /* border: 1px solid #000; */
   width: 200px;
-  /* flex-grow: 1; */
 }
 
 .col-container p {
